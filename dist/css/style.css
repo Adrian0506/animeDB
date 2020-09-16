@@ -1,0 +1,78 @@
+.animate {
+  animation-name: fade;
+  animation-duration: 2s;   
+}
+
+
+
+.resize {
+    width: 100px;
+}
+
+
+.rounded_text {
+    position: relative;
+    background-color: #292b2c;
+    width: 1200px;
+    height: 700px;
+    padding: 50px;
+    margin: 4px 2px;
+    left: 20rem;
+    color: #fff;
+    border-radius: 12px;
+    animation-name: fadeFromUp;
+    animation-duration: 2s;
+    font-family: Arimo !important;
+    font-weight: 700;
+}
+
+
+
+.inside_text {
+    position: relative;
+    left: 25%;
+}
+
+
+.tiny_text {
+     position: relative;
+    font-size: 25px;
+    left: 22%;
+    top: 6%;
+}
+
+.tiny_text_disp {
+    position: relative;
+     top: 5%;
+    left: 26%;
+    font-size: 25px;
+}
+
+
+
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes fadeFromUp {
+ 0% {
+    transform: translateY(100px);
+    opacity: 0;
+ }
+ 
+  80% {
+      transfrom: translateY(-100px);
+      opacity: 0.8
+  }
+ 100% {
+     transform: translateY(0px);
+     opacity: 1;
+ }
+}
