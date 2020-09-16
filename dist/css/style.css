@@ -1,15 +1,22 @@
+
+
 .animate {
   animation-name: fade;
   animation-duration: 2s;   
 }
-
+.card {
+  display:inline-block;
+  margin: 2px 5px;
+}
 
 
 .resize {
     width: 100px;
 }
 
-
+.card-img-top {
+    width: 200px;
+}
 .rounded_text {
     position: relative;
     background-color: #292b2c;
@@ -17,6 +24,7 @@
     height: 700px;
     padding: 50px;
     margin: 4px 2px;
+    top: 3rem;
     left: 20rem;
     color: #fff;
     border-radius: 12px;
@@ -48,6 +56,24 @@
     font-size: 25px;
 }
 
+.animation {
+    animation-name: from-top;
+    animation-duration: 2s;
+} 
+
+
+@keyframes from-top {
+    0% {
+        opacity: 0;
+       transform:translateY(-100px);
+    }
+
+100% {
+    opacity:1;
+    transform: translateY(0px)
+}
+
+}
 
 
 
@@ -75,4 +101,99 @@
      transform: translateY(0px);
      opacity: 1;
  }
+}
+
+
+.btn-move{
+    position: relative;
+    border-radius: 30px;
+    top: 0rem;
+    left: 30rem;
+}
+
+
+
+
+.resize-logo {
+  position: relative;
+  top: 10rem;
+ width: 100px;
+}
+
+
+.bio-text {
+    position: relative;
+    font-size: 25px;
+    left: 8rem;
+    top:3rem;
+}
+
+.bio-mini {
+    position: relative;
+    font-size: 15px;
+    top: 50px;
+    left: 8rem;
+}
+
+
+.move {
+  position: relative;
+  left: 62rem;
+  top: 2rem;
+
+}
+
+
+.mini-bio {
+    position: relative;
+    font-size: 25px;
+    left: 47rem;
+    top:-5rem;
+}
+
+
+.text-mini {
+    position: relative;
+    font-size: 15px;
+    top: -5rem;
+    left: 43rem;
+}
+
+
+.rounded_bordes {
+    border-radius:100px;
+    height: 55px;
+    width: 100px;
+}
+
+.rounded-border{
+
+    border-radius: 25px;
+   width: 35%;
+   height: 50px;
+}
+.form_data {
+    position: relative;
+    left: 37rem;
+    top: 4rem;
+  animation-name: form-box;
+  animation-duration: 2s;
+}
+
+
+@keyframes form-box {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+.alerts {
+    position: relative;
+    top: 4rem;
 }
