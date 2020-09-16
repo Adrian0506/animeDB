@@ -34,7 +34,10 @@
     font-weight: 700;
 }
 
-
+._popular {
+    position: relative;
+    top: 15rem;
+}
 
 .inside_text {
     position: relative;
@@ -61,7 +64,10 @@
     animation-duration: 2s;
 } 
 
-
+.top_anime {
+    position: relative;
+    top: 20rem;
+}
 @keyframes from-top {
     0% {
         opacity: 0;
@@ -103,6 +109,11 @@
  }
 }
 
+
+.searchresults {
+    position: relative;
+    top: 5rem;
+}
 
 .btn-move{
     position: relative;
