@@ -6,7 +6,12 @@ window.addEventListener('DOMContentLoaded', function () {
 
 async function getAnime () {
 
-
+    await fetch(`https://api.jikan.moe/v3/anime/${localStorage.data}/characters_staff`).then(datas => {
+        return datas.json();
+    }).then(infos => {
+        console.log(infos)
+        renderCharacters(infos.characters);
+    })
 
 await fetch(`https://api.jikan.moe/v3/anime/${localStorage.data}`).then(data => {
 
@@ -23,6 +28,29 @@ return data.json();
 
 }
 
+function renderCharacters(data) {
+    for (let i = 0; i < data.length; i++) {
+        console.log(data[i])
+        renderCharacterDOM(data[i])
+        if (i === 6) {
+            break;
+        }
+    } 
+}
+
+
+function renderCharacterDOM(data) {
+ let html = `
+  <div class = 'chars_container'>
+ <img src = '${data.image_url}' class = 'char_resize'>
+  <h1= 'char_name'>${data.name}</h1>
+ </div>`
+ 
+
+document.querySelector('.white_border').insertAdjacentHTML('afterbegin', html)
+}
+
+
 
 
 document.querySelector('.grey_btn').addEventListener('click', function () {
@@ -33,7 +61,7 @@ window.location = 'index.html'
 
 
 
-function renderAnime(info) {
+function renderAnime(info, char) {
 let genres = ''
 
 for (let i = 0; i < info.genres.length; i++) {
@@ -56,6 +84,7 @@ genres += info.genres[i].name + ', '
     </div>
       <div class = 'anime_gen_container'>
      <h1 class = 'anime_gen'>Genres: ${genres}</h1>
+     <h1 class = 'text_char'>Characters:</h1>
       </div>
      `
   document.querySelector('.white_border').insertAdjacentHTML('afterbegin', html)

@@ -50,7 +50,9 @@ top: 7rem;
     left: 3rem;
     top: 2rem;
 }
-
+.char_name {
+    font-size: 12px;
+}
 .anime_gen{
     position: relative;
     top: -15rem;
@@ -58,6 +60,26 @@ top: 7rem;
     left: 5rem;
 }
 
+
+.char_resize {
+    width: 80px;
+}
+
+.text_char {
+    position: relative;
+    top: -23rem;
+    left: 26rem;
+}
+
+.chars_container{ 
+    position: relative;
+    width: 100px;
+    height: 200px;
+    margin: 2px;
+    top: -20rem;
+    left: 29rem;
+    display: inline-block;
+}
 
 
 .anime_synp {
