@@ -1,3 +1,75 @@
+.container_cards_results{
+    position: relative;
+    top: 130px;
+    left: 200px;
+    width: 1500px;
+    border-radius: 12px;
+    background-color: #292b2c;
+}
+.grey_btn{
+    position: relative;
+    border-radius: 15px;
+    left: 2rem;
+    top: 2rem;
+}
+
+
+.rank_ani {
+position: relative;
+font-size: 20px;
+left: 11rem;
+top: 5rem;
+}
+ 
+
+
+.hidden {
+    display: none;
+}
+
+.image_resize {
+    position: relative;
+    width: 300px;
+    border-radius: 12px;
+    top: 7rem;
+    left: 5rem;
+}
+
+
+.title_text {
+    position: relative;
+    align-self: center;
+    top: -23rem;
+    left: 9rem;
+}
+
+.cardpage2 {
+    position: relative;
+    width: 70rem !important;
+    border-radius: 12px;
+}
+.anime_container {
+    position: relative;
+    top: 6rem;
+    left: 200px;
+    width: 1500px;
+    height: 1000px;
+    border-radius: 12px;
+    background-color: #292b2c;
+    
+}
+
+.white_border {
+    position: relative;
+    top: 5rem;
+    left: 110px;
+    width: 1300px;
+    height:  850px;
+    border-radius: 12px;
+    background-color: #fff;
+    
+}
+
 
 
 .container_cards {
@@ -12,6 +84,17 @@
 .animate {
   animation-name: fade;
   animation-duration: 2s;   
+}
+
+.card2 {
+    position: relative;
+    left: 6rem;
+    top: 10rem !important;
+  display:inline-block;
+  margin: 2px 5px;
+  flex-direction: column;
+  
+  align-items: center;
 }
 .card {
     position: relative;
@@ -55,6 +138,13 @@
     color: #fff;
     top: 3rem;
     left: 40rem;
+}
+
+
+.spinner-border {
+    position: relative;
+    left: 55rem;
+    top: 20rem;
 }
 
 .inside_text {
@@ -131,6 +221,9 @@
 .searchresults {
     position: relative;
     top: 5rem;
+    color:white;
+    left: 2rem;
+
 }
 
 .btn-move{
@@ -229,7 +322,29 @@
 
 
 
+._footer {
+    position: relative;
+    bottom:0;
+    left:0;
+    margin-top: -0px;
+    width: 100%;
+    height: 20%;
+    top: 20rem;
+    background-color: #292b2c;
+    color: white;
+}
+
+
 @media (max-width: 376px) { 
+
+     
+.inside_text {
+    position: relative;
+    left: 15%;
+    font-size: 20px;
+}
+
+
 
 
      .rounded_text {
@@ -263,11 +378,59 @@
     .form_data {
         position: relative;
         left: 5rem;
-        top: 4rem;
+        top: 7rem;
       animation-name: form-box;
       animation-duration: 2s;
+
+
+
+
+      
+    }
+    .card {
+        position: relative;
+        left: 3rem;
+        top: -15rem;
+        display: flex;
+      margin: 2px 5px;
+      flex-direction: column;
+       border-radius: 5px;    
+      align-items: center;
     }
 
+    .container_cards {
+        position: relative;
+        top: 200px;
+        left: 10px;
+        width: 350px;
+        border-radius: 12px;
+        background-color: #292b2c;
+    }
+
+
+
+    .tiny_text {
+        position: relative;
+       font-size: 15px;
+       left: 0%;
+       top: 6%;
+   }
+
+
+.move {
+    position: relative;
+    left: 10rem;
+    top: 2rem;
+  
+  }
+
+
+  .btn-move{
+    position: relative;
+    border-radius: 30px;
+    top: -6rem;
+    left: 5rem;
+}
 
 
 }

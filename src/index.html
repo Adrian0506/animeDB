@@ -4,6 +4,9 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <link rel = "stylesheet" href = './css/style.css'>
 <head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 
 
@@ -17,7 +20,7 @@
     <div class="collapse navbar-collapse" id="navbarColor01">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#index.html">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Features</a>
@@ -38,7 +41,7 @@
    <div class="rounded_text">
      <h1 class = inside_text><b>Search your favorite anime's</b></h1>
      <h1 class = tiny_text> <em>Using the most popular api you can find the highest</em> </h1>
-     <h1 class = tiny_text_disp><em>rated animes from users around the world!</em></h1>
+     <h1 class = tiny_text><em>rated animes from users around the world!</em></h1>
      <img src = './image/circle.png' class = 'resize-logo'>
      <h1 class = 'bio-text'><b>Using the latest API.</b></h1>
      <h1 class = 'bio-mini'>We use a api that get updated daily, with new anime</h1>
@@ -59,9 +62,7 @@
 
 
 
-  <div class="spinner-border" role="status">
-    <span class="sr-only">Loading...</span>
-  </div>
+
   <form class= 'form_data'>
     <input type = 'text' class = '_data rounded-border' placeholder="  Search a anime...">
     <button class = '_search btn btn-primary btn-lg rounded_bordes' type = 'button' value = 'send'><i class="fa fa-search"></i></button>
@@ -75,19 +76,26 @@
   
   </div>
 
-<div class = '_searchquery'>
-  
-</div>
 
 
+<div class = 'container_cards animate' id = 'block'>
   <h1 class = '_popular'>Popular</h1> 
 <div class = 'top_anime'>
-  
+</div>
 </div>
 
 
-    <div class = '_results'>
 
+     <div class = 'container_cards_results'>    
+      <div class = '_searchquery'></div>
+      <div class = '_results'>
+    </div>
     </div>
 
- </body>
+
+
+
+
+<footer class ='_footer'>Created by Adrian Ibarra</footer>
+
+  </body>
