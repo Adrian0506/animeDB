@@ -129,7 +129,6 @@ async function getSearch() {
    console.log(data)
    sendInfo(data.data.results);
    document.querySelector('._searchquery').insertAdjacentHTML('afterbegin', seachQuery)
-   document.querySelector('.alerts').insertAdjacentHTML('afterbegin', alert)
   }).catch(err => {
     let badAlert = `<div class="alert alert-danger" role="alert">Bad request please try again.`
     document.querySelector('.alerts').innerHTML = '';
@@ -175,7 +174,7 @@ document.querySelector('._results').insertAdjacentHTML('afterbegin', html)
 
 
 function sendInfo(data) {
-  for (let i = 0; i < data.length; i++) {
+  for (let i = data.length - 1; i > 0; i--) {
     console.log(data[i])
     renderDom(data[i])
   } 

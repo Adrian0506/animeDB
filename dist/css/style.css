@@ -18,10 +18,51 @@
 position: relative;
 font-size: 20px;
 left: 11rem;
-top: 5rem;
+top: 7rem;
 }
- 
 
+.rank_score {
+    position: relative;
+    font-size: 25px;
+     left: 9rem;
+     top:2rem;
+   
+}  
+
+
+.synp {
+    position: relative;
+    left: 25rem;
+    top: -27rem;
+}
+
+.anime_synp {
+    position: relative;
+    width: 700px;
+    left: 25rem;
+    top: -26rem;
+}
+
+
+.anime_gen_container {
+    position: relative;
+    width: 300px;
+    left: 3rem;
+    top: 2rem;
+}
+
+.anime_gen{
+    position: relative;
+    top: -15rem;
+    font-size: 20px;
+    left: 5rem;
+}
+
+
+
+.anime_synp {
+font-size: 18px;
+}
 
 .hidden {
     display: none;
