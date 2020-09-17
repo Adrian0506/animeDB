@@ -1,12 +1,27 @@
 
 
+.container_cards {
+    position: relative;
+    top: 200px;
+    left: 200px;
+    width: 1500px;
+    border-radius: 12px;
+    background-color: #292b2c;
+}
+
 .animate {
   animation-name: fade;
   animation-duration: 2s;   
 }
 .card {
+    position: relative;
+    left: 6rem;
+    top: -15rem;
   display:inline-block;
   margin: 2px 5px;
+  flex-direction: column;
+  
+  align-items: center;
 }
 
 
@@ -15,7 +30,8 @@
 }
 
 .card-img-top {
-    width: 200px;
+    width: 240px;
+    height: 330px;
 }
 .rounded_text {
     position: relative;
@@ -36,7 +52,9 @@
 
 ._popular {
     position: relative;
-    top: 15rem;
+    color: #fff;
+    top: 3rem;
+    left: 40rem;
 }
 
 .inside_text {
@@ -207,4 +225,49 @@
 .alerts {
     position: relative;
     top: 4rem;
+}
+
+
+
+@media (max-width: 376px) { 
+
+
+     .rounded_text {
+        position: relative;
+        background-color: #292b2c;
+        width: 350px;
+        height: 700px;
+        padding: 50px;
+        margin: 4px 2px;
+        top: 3rem;
+        left: 0.5rem;
+        color: #fff;
+        border-radius: 12px;
+        animation-name: fadeFromUp;
+        animation-duration: 2s;
+        font-family: Arimo !important;
+        font-weight: 700;
+    }
+
+
+    .container_cards {
+        position: relative;
+        top: 200px;
+        left: 20px;
+        width: 1500px;
+        border-radius: 12px;
+        background-color: #292b2c;
+    }
+    
+
+    .form_data {
+        position: relative;
+        left: 5rem;
+        top: 4rem;
+      animation-name: form-box;
+      animation-duration: 2s;
+    }
+
+
+
 }
